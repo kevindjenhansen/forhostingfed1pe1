@@ -36,7 +36,7 @@ async function loadPost() {
     const token = localStorage.getItem("token");
 
     if (userData && token) {
-      editBtn.href = `/post/edit-blog.html?id=${postId}`;
+      editBtn.href = `../post/edit-blog.html?id=${postId}`;
       editBtn.style.display = "inline-block";
     }
 
