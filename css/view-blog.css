@@ -1,4 +1,4 @@
-@import url(/css/reset.css);
+@import url("../css/reset.css");
 
 .view-container {
   max-width: 800px;
