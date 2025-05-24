@@ -8,6 +8,10 @@ const form = document.getElementById("editBlogForm");
 const loginState = document.getElementById("loginState");
 const user = JSON.parse(localStorage.getItem("user"));
 const token = localStorage.getItem("token");
+const deleteBtn = document.getElementById("deleteBtn");
+const confirmModal = document.getElementById("confirmModal");
+const confirmDelete = document.getElementById("confirmDelete");
+const cancelDelete = document.getElementById("cancelDelete");
 
 if (user && user.name) {
   loginState.innerHTML = `
@@ -35,7 +39,7 @@ async function loadPost() {
 
     if (data.author.name !== user.name) {
       alert("You can only edit your own posts.");
-      window.location.href = "/index.html";
+      window.location.href = "../index.html";
       return;
     }
 
@@ -87,11 +91,6 @@ form.addEventListener("submit", async (e) => {
 });
 
 loadPost();
-
-const deleteBtn = document.getElementById("deleteBtn");
-const confirmModal = document.getElementById("confirmModal");
-const confirmDelete = document.getElementById("confirmDelete");
-const cancelDelete = document.getElementById("cancelDelete");
 
 deleteBtn.addEventListener("click", () => {
   confirmModal.style.display = "flex";

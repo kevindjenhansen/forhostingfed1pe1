@@ -24,7 +24,7 @@ form.addEventListener("submit", async (e) => {
     localStorage.setItem("token", data.accessToken);
     localStorage.setItem("user", JSON.stringify(data));
 
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   } catch (err) {
     formMessage.textContent = err.message;
   }
