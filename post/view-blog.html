@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Read more about exciting exotic animals!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exonimal | Blog</title>
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/view-blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="/images/exonimal-logo.png" alt="Exonimal Logo">
+      </div>
+
+      <div class="nav-texts">
+        <a href="/index.html">Blogs</a>
+        <span>Latest</span>
+        <span>News</span>
+        <span>About</span>
+      </div>
+
+      <div class="login-button" id="loginState">
+        <a href="/account/login.html">Login</a>
+      </div>
+
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <i class="fas fa-bars"></i>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="/index.html">Blogs</a>
+          <span>Latest</span>
+          <span>News</span>
+          <span>About</span>
+        </div>
+      </div>
+    </header>
+
+  <div class="page-title">Blog</div>
+
+<main class="view-container">
+  <h1 id="postTitle"></h1>
+  <img id="postImage" alt="" />
+  <p id="postAuthorDate" class="meta"></p>
+  <p id="postBody"></p>
+  <p id="errorMessage"></p>
+
+  <div class="post-controls">
+    <button id="shareBtn" title="Copy blog link">
+      <i class="fas fa-share-alt"></i> Share
+    </button>
+
+    <a href="#" id="editBtn" style="display: none;">
+      <i class="fas fa-edit"></i> Edit Post
+    </a>
+  </div>
+</main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section left">
+        <img src="/images/exonimal-logo.png" alt="Exonimal Logo" class="footer-logo">
+        <p>&copy; Copyrightclaim@ 2025</p>
+      </div>
+
+      <div class="footer-section middle">
+        <h3>Follow Us</h3>
+        <p>Stay connected with the museum!<br>
+          Follow us on social media for the latest updates.
+        </p>
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter social-icon"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook social-icon"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram social-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section right">
+        <h3>Contact Us</h3>
+        <p>Contact us by phone or email using the<br>
+          contact information found <a href="#">here</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/javascript/hambuger.js"></script>
+  <script src="/javascript/view-blog.js"></script>
+
+</body>
+</html>
