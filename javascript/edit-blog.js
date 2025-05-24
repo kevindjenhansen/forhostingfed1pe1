@@ -112,7 +112,7 @@ confirmDelete.addEventListener("click", async () => {
     if (!res.ok) throw new Error("Delete failed");
 
     alert("Blog post deleted successfully.");
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 
   } catch (err) {
     console.error("Delete error:", err);
